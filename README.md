@@ -2,7 +2,7 @@
 Este é um simples jogo da forca implementado usando Vue.js. É um jogo clássico onde o jogador tenta adivinhar uma palavra com a ajuda de uma dica, letra por letra, antes de esgotar todas as tentativas.
 
 ## Print
-![Imagem da tela inicial do Jogo da Forca](https://github.com/thayllaa/HangmanGame/tree/master/src/assets/Jogo-da-Forca.png)
+![Imagem da tela inicial do Jogo da Forca](https://github.com/thayllaa/HangmanGame/blob/master/src/assets/Jogo-da-Forca.png)
 
 ## Como Jogar
 *Regras do Jogo:*

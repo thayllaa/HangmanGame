@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1> Jogo da Forca © thayllaa</h1>
+    <h1> Jogo da Forca </h1>
 
     <section v-if="tela === 'inicio'" id="inicio">
       <Formulario v-if="etapa === 'palavra'" 
@@ -28,6 +28,9 @@
       />
     
     </section>
+    <footer>
+      2023 © thayllaa
+    </footer>
   </div>
 </template>
 

@@ -37,7 +37,7 @@
         <Final
             v-if="etapa != 'jogo'"
             :etapa="etapa"
-            :texto="etapa === 'ganhador' ? 'Parabéns, você é o(a) ganhador(a)!' : 'Xiii, você é o(a) perdedor(a)!.'"
+            :texto="etapa === 'ganhador' ? 'Parabéns, você é o(a) ganhador(a)!' : 'Xiii, você é o(a) perdedor(a)!'"
             :jogarNovamente="jogarNovamente"/>
     </div>
 </template>

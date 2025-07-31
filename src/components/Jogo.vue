@@ -37,7 +37,7 @@
         <Final
             v-if="etapa != 'jogo'"
             :etapa="etapa"
-            :texto="etapa === 'ganhador' ? 'Parabéns, você é o(a) ganhador(a)!' : 'Xiii, você perdeu.'"
+            :texto="etapa === 'ganhador' ? 'Parabéns, você é o(a) ganhador(a)!' : 'Xiii, você é o(a) perdedor(a)!.'"
             :jogarNovamente="jogarNovamente"/>
     </div>
 </template>
@@ -159,7 +159,7 @@ export default {
 }
 
 .letra-input {
-    flex-grow: 1; /* Permite que o input cresça */
+    flex-grow: 1;
     padding: 10px;
     font-size: 1.2em;
     text-align: center;
@@ -167,7 +167,7 @@ export default {
     border-radius: 5px;
     background-color: var(--color-background);
     color: var(--color-text-light);
-    min-width: 100px; /* Largura mínima para o input */
+    min-width: 100px;
 }
 
 .letra-input::placeholder {

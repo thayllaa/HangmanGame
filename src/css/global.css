@@ -1,0 +1,142 @@
+:root {
+    --color-background: #2b343e;
+    --color-background-button: #2980b9;
+    --color-text-dark: #2c3e50;
+    --color-text-light: #ecf0f1;
+    --color-text-title: #1abc9c;
+    --color-text-success: #2ecc71;
+    --color-text-error: #c0392b;
+
+    font-size: 16px; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--color-text-light);
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--color-background);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.game-container {
+    flex-grow: 1; /* Permite que o container ocupe o espaço restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente dentro do container */
+    align-items: center;     /* Centraliza o conteúdo horizontalmente dentro do container */
+    max-width: 90%; /* Limita a largura em telas maiores */
+    width: 100%;    /* Garante que ocupe a largura disponível em telas menores */
+    padding: 1rem;  /* Espaçamento interno responsivo */
+    text-align: center; /* Centraliza texto dentro do container */
+}
+
+h1 {
+    color: var(--color-text-title);
+    font-size: 2.5rem; /* Use rem para tamanho de fonte responsivo */
+    margin-bottom: 1.5rem; /* Espaçamento inferior responsivo */
+}
+
+button {
+    padding: 0.8rem 1.2rem; /* Use rem para padding responsivo */
+    background-color: var(--color-background-button);
+    border: 0;
+    border-radius: 0.3rem; /* Use rem para border-radius responsivo */
+    cursor: pointer;
+    transition: 0.2s opacity;
+    font-size: 1rem; /* Tamanho da fonte do botão */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button[disable] {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+/* --- FOOTER (Já está relativamente bem, só ajustes de rem) --- */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* Removido height: 10%; - deixe o conteúdo definir a altura, controle com padding */
+    background-color: #333;
+    text-align: center;
+    padding: 1rem 0; /* Padding responsivo */
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.8rem; /* Fonte ligeiramente menor para mobile */
+    min-height: 50px; /* Garante uma altura mínima para o footer */
+}
+
+footer p {
+    margin: 0.3rem 0; /* Margem responsiva */
+    color: var(--color-text-light);
+}
+
+footer strong a {
+    color: var(--color-text-light);
+    text-decoration: none;
+}
+
+footer strong a:hover {
+    text-decoration: underline;
+    color: #148f77;
+}
+
+/* --- MEDIA QUERIES --- */
+/* Para telas médias (tablets e alguns desktops pequenos) */
+@media (min-width: 768px) {
+    :root {
+        font-size: 17px; /* Aumenta a fonte base um pouco para telas maiores */
+    }
+
+    .game-container {
+        max-width: 700px; /* Limita a largura do container em tablets */
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 3.5rem; /* Aumenta o tamanho do título */
+    }
+
+    button {
+        padding: 1rem 1.5rem; /* Aumenta o padding do botão */
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem; /* Aumenta a fonte do footer para desktop */
+    }
+}
+
+/* Para telas grandes (desktops) */
+@media (min-width: 1024px) {
+    :root {
+        font-size: 18px; /* Aumenta a fonte base para desktops */
+    }
+
+    .game-container {
+        max-width: 800px; /* Limita a largura do container em desktops maiores */
+    }
+
+    h1 {
+        font-size: 4rem; /* Título maior ainda */
+    }
+}

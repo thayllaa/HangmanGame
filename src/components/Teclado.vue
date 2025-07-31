@@ -1,6 +1,6 @@
 <template>
     <div class="teclado">
-        <button class="teclado-button" 
+        <button class="teclado-button"
         v-for="(letra,key) in 'abcdefghijklmnopqrstuvwxyz'"
         :key="key"
         :disable="verificarLetra(letra)"
@@ -10,7 +10,6 @@
     </div>
 </template>
 
-<!-- eslint-disable vue/multi-word-component-names -->
 <script>
 export default {
     name: 'Teclado',
@@ -22,16 +21,22 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .teclado{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 85%;
+        width: 95%;
         margin-top: 20px;
     }
     .teclado-button{
-        margin: 5px;
+        margin: 3px; 
         text-transform: uppercase;
+        padding: 8px 8px;
+        min-width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>

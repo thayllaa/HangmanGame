@@ -12,8 +12,24 @@ Este é um simples jogo da forca implementado usando Vue.js. É um jogo clássic
 
 ## Instalação Local
 Para executar o jogo localmente, siga estas instruções:
+1. Clone o repositório:
 ```bash
    git clone https://github.com/thayllaa/HangmanGame
-   cd jogo-da-forca
+   cd HangmanGame
+``` 
+2. Instale as dependências com npm:
+```bash
    npm install
+```
+3. Execute o servidor de desenvolvimento:
+```bash
    npm run serve
+```
+
+## Projeto Online
+Você pode visualizar e interagir com a versão online deste aplicativo de Jogo da Forca, hospedado no Netlify, através do seguinte link:
+[Hangman Game](https://thehangmangameweb.netlify.app/)
+
+## Autor
+Backend: [thayllaa](https://www.linkedin.com/in/thaylla-de-santana-bispo-dos-santos-894b42236/)
+Frontend: [Tarcisio Leite](https://www.linkedin.com/in/tarcisio-leite/)

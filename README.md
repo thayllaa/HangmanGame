@@ -1,4 +1,4 @@
-### Jogo da Forca
+# Jogo da Forca
 Este é um simples jogo da forca implementado usando Vue.js. É um jogo clássico onde o jogador tenta adivinhar uma palavra com a ajuda de uma dica, letra por letra, antes de esgotar todas as tentativas.
 
 ## Print
@@ -31,5 +31,5 @@ Você pode visualizar e interagir com a versão online deste aplicativo de Jogo 
 [Hangman Game](https://thehangmangameweb.netlify.app/)
 
 ## Autor
-Backend: [thayllaa](https://www.linkedin.com/in/thaylla-de-santana-bispo-dos-santos-894b42236/)
-Frontend: [Tarcisio Leite](https://www.linkedin.com/in/tarcisio-leite/)
+[thayllaa](https://www.linkedin.com/in/thaylla-de-santana-bispo-dos-santos-894b42236/) | 
+[Tarcisio Leite](https://www.linkedin.com/in/tarcisio-leite/)
